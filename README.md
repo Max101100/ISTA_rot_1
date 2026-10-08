@@ -31,3 +31,5 @@ rf  = filter_from_table(rf, part='ZVBP-10R5G-S+')
 opt = eom_laser_output(rf, laser_power_mW=10, vpi_V=3.0, insertion_loss_dB=3.5)
 plot_stages(rf); plot_spectrum(opt); opt.table(10)
 ```
+
+The required dependecies are listed in `requirements.txt` and can be installed with `pip install -r requirements.txt` in a python virtualenv
